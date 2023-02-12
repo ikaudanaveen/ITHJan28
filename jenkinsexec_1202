@@ -1,0 +1,5 @@
+cd /opt/docker;
+docker stop regapp;
+docker rm regapp;
+docker build -t regapp:v1 .;
+docker run -d --name regapp -p 8081:8080 regapp:v1;
