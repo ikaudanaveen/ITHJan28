@@ -7,9 +7,9 @@ metadata:
     app: demo-app
 
 spec:
-  container:
-    -name: demo-nginx
-     image: nginx
-     ports:
-       -name: demo-nginx
-        ContainerPort: 80
+  containers:
+    - name: demo-nginx
+      image: nginx
+      ports:
+       - name: demo-nginx
+         containerPort: 80
